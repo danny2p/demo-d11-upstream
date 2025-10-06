@@ -27,7 +27,8 @@
         "drush/drush": "^13",
         "pantheon-systems/upstream-management": "*",
         "pantheon-systems/pcx_connect": "dev-main",
-        "drupal/pantheon_advanced_page_cache": "^2.3"
+        "drupal/pantheon_advanced_page_cache": "^2.3",
+        "drupal/pathauto": "^1.13"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

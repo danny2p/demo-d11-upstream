@@ -28,7 +28,8 @@
         "pantheon-systems/upstream-management": "*",
         "drupal/pantheon_advanced_page_cache": "^2.3",
         "drupal/pathauto": "^1.13",
-        "drupal/pantheon_content_publisher": "1.0.x-dev@dev"
+        "drupal/pantheon_content_publisher": "1.0.x-dev@dev",
+        "drupal/search_api_pantheon": "^8"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

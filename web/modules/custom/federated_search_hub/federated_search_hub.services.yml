@@ -1,0 +1,11 @@
+services:
+  federated_search_hub.indexer:
+    class: Drupal\federated_search_hub\Service\FederatedIndexer
+    arguments:
+      - '@entity_type.manager'
+      - '@search_api.index_task_manager'
+      - '@logger.channel.federated_search_hub'
+
+  logger.channel.federated_search_hub:
+    parent: logger.channel_base
+    arguments: ['federated_search_hub']

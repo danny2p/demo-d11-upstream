@@ -1,0 +1,26 @@
+federated_search_hub.batch_index:
+  path: '/federated-search/batch-index'
+  defaults:
+    _controller: '\Drupal\federated_search_hub\Controller\BatchIndexController::batchIndex'
+    _title: 'Federated Search Batch Index'
+  methods: [POST]
+  requirements:
+    _custom_access: '\Drupal\federated_search_hub\Controller\BatchIndexController::access'
+
+federated_search_hub.status:
+  path: '/federated-search/status'
+  defaults:
+    _controller: '\Drupal\federated_search_hub\Controller\BatchIndexController::status'
+    _title: 'Federated Search Status'
+  methods: [GET]
+  requirements:
+    _custom_access: '\Drupal\federated_search_hub\Controller\BatchIndexController::access'
+
+federated_search_hub.delete:
+  path: '/federated-search/delete'
+  defaults:
+    _controller: '\Drupal\federated_search_hub\Controller\BatchIndexController::deleteBySite'
+    _title: 'Delete Site Content'
+  methods: [POST]
+  requirements:
+    _custom_access: '\Drupal\federated_search_hub\Controller\BatchIndexController::access'

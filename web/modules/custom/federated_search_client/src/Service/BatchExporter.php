@@ -207,8 +207,12 @@ class BatchExporter {
       $item['author'] = $node->getOwner()->getDisplayName();
     }
 
-    // Add body field
-    if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
+    // Add body field - check for field_content first (new standard), then body (legacy)
+    if ($node->hasField('field_content') && !$node->get('field_content')->isEmpty()) {
+      $content = $node->get('field_content')->first();
+      $item['body'] = strip_tags($content->value);
+    }
+    elseif ($node->hasField('body') && !$node->get('body')->isEmpty()) {
       $body = $node->get('body')->first();
       $item['body'] = strip_tags($body->value);
 

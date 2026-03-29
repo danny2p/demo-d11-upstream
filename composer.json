@@ -20,7 +20,8 @@
     "require": {
         "pantheon-upstreams/upstream-configuration": "dev-main",
         "pantheon-systems/upstream-management": "^1.0",
-        "drupal/gemini_provider": "^1.0@RC"
+        "drupal/gemini_provider": "^1.0@RC",
+        "drupal/uswds_base": "^3.10"
     },
     "require-dev": {
         "drupal/core-dev": "^11"
